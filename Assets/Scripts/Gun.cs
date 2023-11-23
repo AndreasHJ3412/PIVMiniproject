@@ -29,18 +29,12 @@ public class Gun : MonoBehaviour
     
     public void ShootBullet()
     {
-        //RaycastHit hit;
-        /*if (Physics.Raycast(bulletSpawnPoint.transform.position, bulletSpawnPoint.transform.forward, out hit,
-                bulletSpeed))*/
-        //{
             GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.identity);
             Rigidbody rb = bullet.GetComponent<Rigidbody>();
         
             rb.AddForce(bulletSpawnPoint.forward * bulletSpeed, ForceMode.Impulse);
 
             Destroy(bullet, 3.0f);
-        //}
     }
     
-
 }

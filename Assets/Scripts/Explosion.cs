@@ -27,13 +27,10 @@ public class Explosion : MonoBehaviour
         cubesPivotDistance = cubeSize * cubesInRow / 2;
         //use this value to create pivot vector)
         cubesPivot = new Vector3(cubesPivotDistance, cubesPivotDistance, cubesPivotDistance);
-
-        killCounter = GameObject.Find("KillCounter").GetComponent<KillCounter>();
+        
 	}
-    
-
-
-    private void OnCollisionEnter(Collision other) 
+	
+    private void OnTriggerEnter(Collider other)
 	{
         if (other.gameObject.CompareTag("PlayerBullet")) 
 		{

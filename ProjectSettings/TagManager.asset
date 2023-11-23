@@ -9,6 +9,7 @@ TagManager:
   - PlayerBullet
   - CanGrab
   - Ground
+  - HealthBar
   layers:
   - Default
   - TransparentFX

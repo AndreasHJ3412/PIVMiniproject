@@ -57,8 +57,5 @@ public class GunEnemies : MonoBehaviour
 
 			Destroy(bullet, 6.0f);
         }
-		
-		
     }
-   
 }
