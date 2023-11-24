@@ -10,6 +10,7 @@ TagManager:
   - CanGrab
   - Ground
   - HealthBar
+  - Canvas
   layers:
   - Default
   - TransparentFX

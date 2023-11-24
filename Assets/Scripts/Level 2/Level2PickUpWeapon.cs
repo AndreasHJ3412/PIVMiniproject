@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUpWeapon : MonoBehaviour
+public class Level2PickUpWeapon : MonoBehaviour
 {
     public Gun gun;
     public Rigidbody rb;
@@ -18,6 +18,8 @@ public class PickUpWeapon : MonoBehaviour
 
 	private Vector3 originalScale;
 
+    public Level2KillCounter killCounter;
+    
     private void Start()
     {
         //Set up
@@ -34,8 +36,9 @@ public class PickUpWeapon : MonoBehaviour
             coll.isTrigger = true;
             slotFull = true;
         }
-		
-			originalScale = transform.localScale;
+        
+        originalScale = transform.localScale;
+        
     }
 
     private void Update()
@@ -58,6 +61,12 @@ public class PickUpWeapon : MonoBehaviour
             // Position the weapon relative to the camera's position and rotation
             transform.localPosition = new Vector3(0.21f, -2.9f, 0.35f); // Adjust these values
             transform.localRotation = Quaternion.Euler(Vector3.zero); // Optional: You can also adjust rotation if needed
+            
+        }
+
+        if (equipped && killCounter.bulletCount == 0)
+        {
+            Drop();
         }
     }
 
@@ -79,6 +88,9 @@ public class PickUpWeapon : MonoBehaviour
         
         //Enable script
         gun.enabled = true;
+        
+        killCounter.bulletCount = killCounter.maxBullets;
+        killCounter.UpdateBulletCountText();
     }
 
     private void Drop()

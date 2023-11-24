@@ -6,10 +6,11 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class KillCounter : MonoBehaviour
+public class Level1KillCounter : MonoBehaviour
 {
     private int killCount = 0;
-    private int bulletCount = 20;
+    public int bulletCount = 7;
+    public int maxBullets = 7;
     public TMP_Text killCountText;
     public TMP_Text bulletCountText;
     private int maxKills = 6;
@@ -67,7 +68,7 @@ public class KillCounter : MonoBehaviour
         killCountText.text = killCount.ToString();
     }
 
-    void UpdateBulletCountText()
+    public void UpdateBulletCountText()
     {
            bulletCountText.text = bulletCount.ToString();
     }

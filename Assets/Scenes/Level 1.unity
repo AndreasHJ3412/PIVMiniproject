@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.383
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.48811322, g: 0.5084831, b: 0.55828863, a: 0.383}
+  m_IndirectSpecularColor: {r: 0.49539745, g: 0.51550096, b: 0.5645122, a: 0.383}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -288,6 +288,7 @@ MonoBehaviour:
   dropForwardForce: 3
   dropUpwardForce: 3
   equipped: 1
+  killCounter: {fileID: 1916325135}
 --- !u!65 &183001420
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -717,6 +718,7 @@ MonoBehaviour:
   dropForwardForce: 3
   dropUpwardForce: 3
   equipped: 0
+  killCounter: {fileID: 1916325135}
 --- !u!65 &438504345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1025,6 +1027,7 @@ MonoBehaviour:
   dropForwardForce: 3
   dropUpwardForce: 3
   equipped: 1
+  killCounter: {fileID: 1916325135}
 --- !u!65 &564322217
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1493,6 +1496,7 @@ MonoBehaviour:
   dropForwardForce: 3
   dropUpwardForce: 3
   equipped: 0
+  killCounter: {fileID: 1916325135}
 --- !u!65 &690173172
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2972,6 +2976,7 @@ MonoBehaviour:
   dropForwardForce: 3
   dropUpwardForce: 3
   equipped: 0
+  killCounter: {fileID: 1916325135}
 --- !u!65 &1196067998
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3364,6 +3369,7 @@ MonoBehaviour:
   dropForwardForce: 3
   dropUpwardForce: 3
   equipped: 0
+  killCounter: {fileID: 1916325135}
 --- !u!65 &1305543607
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3569,6 +3575,7 @@ MonoBehaviour:
   dropForwardForce: 3
   dropUpwardForce: 3
   equipped: 0
+  killCounter: {fileID: 1916325135}
 --- !u!65 &1363306716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4317,6 +4324,7 @@ MonoBehaviour:
   dropForwardForce: 3
   dropUpwardForce: 3
   equipped: 0
+  killCounter: {fileID: 1916325135}
 --- !u!65 &1586561343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5344,7 +5352,7 @@ GameObject:
   - component: {fileID: 1916325135}
   m_Layer: 5
   m_Name: Ammo, KillCounter, Crosshair and Health
-  m_TagString: Untagged
+  m_TagString: Canvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5450,6 +5458,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5a6d479bc1f7b4db80fa1debcd6328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletCount: 7
+  maxBullets: 7
   killCountText: {fileID: 1897413061}
   bulletCountText: {fileID: 2020837776}
   fireCooldown: 0.25

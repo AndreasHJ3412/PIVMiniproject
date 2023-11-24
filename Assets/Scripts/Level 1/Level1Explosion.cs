@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 
 
-public class Explosion : MonoBehaviour 
+public class Level1Explosion : MonoBehaviour 
 {
 
     public float cubeSize = 0.2f;
@@ -19,7 +19,7 @@ public class Explosion : MonoBehaviour
 
     GameObject piece;
     
-    public KillCounter killCounter; // Reference to the KillCounter script
+    public Level1KillCounter killCounter; // Reference to the KillCounter script
     
 	void Start() 
 	{

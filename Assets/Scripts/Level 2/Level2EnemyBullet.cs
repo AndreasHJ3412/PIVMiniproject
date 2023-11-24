@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EnemyBullet : MonoBehaviour
+public class Level2EnemyBullet : MonoBehaviour
 {
     private float maxHealth = 100f;
     private float damageAmount = 25f;
@@ -40,7 +40,7 @@ public class EnemyBullet : MonoBehaviour
 
                 if (currentHealth == 0)
                 {
-                    SceneManager.LoadScene("Level 1");
+                    SceneManager.LoadScene("Level 2");
                 }
         }
     }

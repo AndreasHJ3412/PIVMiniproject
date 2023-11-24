@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
-public class EnemyMovement : MonoBehaviour
+public class Level2EnemyMovement : MonoBehaviour
 {
     public Transform target; // Assign this to the player's Transform in the Unity Editor
     public float radius = 10f; // Set this to the desired radius in the Unity Editor
@@ -30,7 +30,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Level 1");
+            SceneManager.LoadScene("Level 2");
         }
     }
 }

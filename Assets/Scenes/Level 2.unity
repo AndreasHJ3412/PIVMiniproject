@@ -602,6 +602,98 @@ RectTransform:
   m_AnchoredPosition: {x: -638.2, y: -477}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &115260865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 115260868}
+  - component: {fileID: 115260867}
+  - component: {fileID: 115260866}
+  m_Layer: 0
+  m_Name: Terrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!154 &115260866
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115260865}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_TerrainData: {fileID: 15600000, guid: c24026210beef1143bbce66d0d1bfb77, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &115260867
+Terrain:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115260865}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 15600000, guid: c24026210beef1143bbce66d0d1bfb77, type: 2}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 80
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_StaticShadowCaster: 0
+  m_IgnoreQualitySettings: 0
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ReceiveGI: 1
+  m_ScaleInLightmap: 0.0256
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 1
+  m_EnableHeightmapRayTracing: 1
+  m_EnableTreesAndDetailsRayTracing: 0
+  m_TreeMotionVectorModeOverride: 3
+--- !u!4 &115260868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115260865}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -127.4, y: 0, z: -129.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &159970603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,6 +1201,7 @@ MonoBehaviour:
   dropForwardForce: 3
   dropUpwardForce: 3
   equipped: 0
+  killCounter: {fileID: 2000199915}
 --- !u!65 &326952869
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1501,6 +1594,7 @@ MonoBehaviour:
   dropForwardForce: 3
   dropUpwardForce: 3
   equipped: 0
+  killCounter: {fileID: 2000199915}
 --- !u!65 &478701575
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2880,98 +2974,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c42b385b472f07418d77f7ab02294cb, type: 3}
---- !u!1 &1216937822
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1216937825}
-  - component: {fileID: 1216937824}
-  - component: {fileID: 1216937823}
-  m_Layer: 0
-  m_Name: Terrain
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!154 &1216937823
-TerrainCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1216937822}
-  m_Material: {fileID: 13400000, guid: 81cb18dcfa133794b8ac144e2c6f1ae6, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: 90e56429eb4acb04d955e2a86e2a67cf, type: 2}
-  m_EnableTreeColliders: 1
---- !u!218 &1216937824
-Terrain:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1216937822}
-  m_Enabled: 1
-  serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 90e56429eb4acb04d955e2a86e2a67cf, type: 2}
-  m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
-  m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
-  m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 1
-  m_SplatMapDistance: 1000
-  m_HeightmapMaximumLOD: 0
-  m_ShadowCastingMode: 2
-  m_DrawHeightmap: 1
-  m_DrawInstanced: 0
-  m_DrawTreesAndFoliage: 1
-  m_StaticShadowCaster: 0
-  m_IgnoreQualitySettings: 0
-  m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
-  m_BakeLightProbesForTrees: 1
-  m_PreserveTreePrototypeLayers: 0
-  m_DeringLightProbesForTrees: 1
-  m_ReceiveGI: 1
-  m_ScaleInLightmap: 0.0256
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
-  m_GroupingID: 0
-  m_RenderingLayerMask: 1
-  m_AllowAutoConnect: 1
-  m_EnableHeightmapRayTracing: 1
-  m_EnableTreesAndDetailsRayTracing: 0
-  m_TreeMotionVectorModeOverride: 3
---- !u!4 &1216937825
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1216937822}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -127.4, y: 0, z: -129.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1234773926
 GameObject:
   m_ObjectHideFlags: 0
@@ -3090,6 +3092,7 @@ MonoBehaviour:
   dropForwardForce: 3
   dropUpwardForce: 3
   equipped: 0
+  killCounter: {fileID: 2000199915}
 --- !u!65 &1240850602
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3889,6 +3892,7 @@ MonoBehaviour:
   dropForwardForce: 3
   dropUpwardForce: 3
   equipped: 0
+  killCounter: {fileID: 2000199915}
 --- !u!65 &1338581715
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4891,6 +4895,7 @@ MonoBehaviour:
   dropForwardForce: 3
   dropUpwardForce: 3
   equipped: 1
+  killCounter: {fileID: 2000199915}
 --- !u!65 &1640131756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5309,6 +5314,7 @@ MonoBehaviour:
   dropForwardForce: 3
   dropUpwardForce: 3
   equipped: 0
+  killCounter: {fileID: 2000199915}
 --- !u!65 &1884598792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5565,6 +5571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5a6d479bc1f7b4db80fa1debcd6328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletCount: 7
+  maxBullets: 7
   killCountText: {fileID: 1870273694}
   bulletCountText: {fileID: 109237447}
   fireCooldown: 0.25
@@ -5791,6 +5799,7 @@ MonoBehaviour:
   dropForwardForce: 3
   dropUpwardForce: 3
   equipped: 1
+  killCounter: {fileID: 2000199915}
 --- !u!65 &2071070246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6117,6 +6126,7 @@ MonoBehaviour:
   dropForwardForce: 3
   dropUpwardForce: 3
   equipped: 0
+  killCounter: {fileID: 2000199915}
 --- !u!65 &2141209186
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6222,9 +6232,9 @@ SceneRoots:
   - {fileID: 660005042}
   - {fileID: 1520036629}
   - {fileID: 2141209189}
-  - {fileID: 1216937825}
   - {fileID: 1640131759}
   - {fileID: 1240850605}
   - {fileID: 413662548}
   - {fileID: 294147941}
   - {fileID: 1186054745}
+  - {fileID: 115260868}
