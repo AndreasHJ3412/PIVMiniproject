@@ -36,7 +36,6 @@ public class PickUpWeapon : MonoBehaviour
         }
 		
 			originalScale = transform.localScale;
-
     }
 
     private void Update()
@@ -64,16 +63,7 @@ public class PickUpWeapon : MonoBehaviour
 
     private void PickUp()
     {
-		
-		// Log world scale before and after picking up
-/*Vector3 localScaleBeforePickup = transform.localScale;
-Vector3 worldScaleBeforePickup = transform.TransformVector(localScaleBeforePickup);
-Debug.Log("Before picking up - World Scale: " + worldScaleBeforePickup);
-// ... Rest of the PickUp() method
-Vector3 localScaleAfterPickup = transform.localScale;
-Vector3 worldScaleAfterPickup = transform.TransformVector(localScaleAfterPickup);
-Debug.Log("After picking up - World Scale: " + worldScaleAfterPickup);*/
-			
+	
         equipped = true;
         slotFull = true;
         
