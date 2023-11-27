@@ -2,10 +2,10 @@
 //Organize code and prevent naming collisions
 namespace Level_2
 {
-	public class Level2Explosion : MonoBehaviour 
+	public class BigEnemyExplosion : MonoBehaviour 
 	{
 
-		public float cubeSize = 0.2f;
+		public float cubeSize = 0.6f;
 		public int cubesInRow = 5;
 
 		float cubesPivotDistance;
@@ -18,6 +18,9 @@ namespace Level_2
 		GameObject piece;
     
 		public Level2KillCounter killCounter; // Reference to the KillCounter script
+		
+		public float startHealth = 10f; // Initial health of the boss
+		private float currentHealth; // Current health of the boss
     
 		void Start() 
 		{
@@ -25,14 +28,19 @@ namespace Level_2
 			cubesPivotDistance = cubeSize * cubesInRow / 2;
 			//use this value to create pivot vector)
 			cubesPivot = new Vector3(cubesPivotDistance, cubesPivotDistance, cubesPivotDistance);
-        
+			currentHealth = startHealth;
 		}
 	
 		private void OnTriggerEnter(Collider other)
 		{
 			if (other.gameObject.CompareTag("PlayerBullet")) 
 			{
-				explode();
+				// Reduce health and increment shots taken
+				currentHealth -= 1f;
+				if (currentHealth <= 0)
+				{
+					explode(); //Boss explodes when health is zero
+				}
 			}
 		}
 

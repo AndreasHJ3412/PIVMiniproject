@@ -1,18 +1,17 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class Level1EnemyBullet : MonoBehaviour
+//Organize code and prevent naming collisions
+namespace Level_1
 {
-    private float maxHealth = 100f;
-    private float damageAmount = 25f;
-    
-    public void OnTriggerEnter(Collider other)
+    public class Level1EnemyBullet : MonoBehaviour
     {
-        if (other.gameObject.CompareTag("Player"))
-        {       
+        private float maxHealth = 100f;
+        private float damageAmount = 25f;
+    
+        public void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("Player"))
+            {       
                 //Destroys the bullets
                 Destroy(gameObject);
             
@@ -42,6 +41,7 @@ public class Level1EnemyBullet : MonoBehaviour
                 {
                     SceneManager.LoadScene("Level 1");
                 }
+            }
         }
     }
 }

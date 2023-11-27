@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private float sensitivity = 2.0f;
     private float rotationX = 0.0f;
 
-    private float slowGameSpeed = 0.2f;
+    private float slowGameSpeed = 0.1f;
     private float normalGameSpeed = 1f;
 
     private bool isMoving = false;
