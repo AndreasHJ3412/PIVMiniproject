@@ -1,1 +1,5 @@
 # PIVMiniproject
+The idea for the project is based on a first-person shooter where time slows down when the player is stationary but runs in real-time during movement. Player moves through an enclosed arena while fighting with enemies who run towards and shoot at the player. The enemies shooting after the player is static in one place, and when the bullets from the shooting enemy hits the player, the player’s health decreases. The enemies running towards the player is chasing with different speed, so the player needs to figure out which enemies is prioritised to shoot. Also, if the chasing enemies hits the player only once, the level restarts.
+There are two levels: 
+First level with less bullets and health but also less enemies to shoot. And if the player runs out of bullets, there is weapons laying around the map that can be picked up.
+The second level is a bit more difficult. Here there is more enemies including a boss enemy with 10x more health than the normal enemies. But in level 2 the player also has more bullets and there more weapons laying around ready to be picked up if the player runs out of bullets.
