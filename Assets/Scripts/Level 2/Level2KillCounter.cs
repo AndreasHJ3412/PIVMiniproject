@@ -13,7 +13,7 @@ public class Level2KillCounter : MonoBehaviour
     public int maxBullets = 7;
     public TMP_Text killCountText;
     public TMP_Text bulletCountText;
-    private int maxKills = 6;
+    private int maxKills = 12;
     
     public float fireCooldown = 0.25f; 
     private float nextFireTime;
@@ -47,7 +47,7 @@ public class Level2KillCounter : MonoBehaviour
         
         if (killCount == maxKills)
         {
-            SceneManager.LoadScene("Level 2");
+            SceneManager.LoadScene("VictoryScene");
         }
     }
     

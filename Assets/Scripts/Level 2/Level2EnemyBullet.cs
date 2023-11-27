@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class Level2EnemyBullet : MonoBehaviour
 {
-    private float maxHealth = 100f;
-    private float damageAmount = 25f;
+    public float maxHealth = 100f;
+    public float damageAmount = 10f;
+    public float currentHealth;
     
     public void OnTriggerEnter(Collider other)
     {
@@ -23,7 +24,7 @@ public class Level2EnemyBullet : MonoBehaviour
                 RectTransform healthBarRect = healthBar.GetComponent<RectTransform>();
                 
                 //Get the current health
-                float currentHealth = healthBarRect.sizeDelta.x;
+                currentHealth = healthBarRect.sizeDelta.x;
 
                 //Decrease health by the damage amount
                 currentHealth -= damageAmount;

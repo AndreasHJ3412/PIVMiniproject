@@ -23,7 +23,6 @@ public class Level2EnemyMovement : MonoBehaviour
         {
             agent.SetDestination(target.position);
         }
-        
     }
 
     private void OnCollisionEnter(Collision other)
