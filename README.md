@@ -1,6 +1,6 @@
 # PIVMiniproject
 
-![Visual](Images/01_ExampleGame_Rato-Cato.gif)
+![Visual]()
 
 ## Overview of the Game
 The idea for the project is based on a first-person shooter where time slows down when the player is stationary but runs in real-time during movement. Player moves through an enclosed arena while fighting with enemies who run towards and shoot at the player. The enemies shooting after the player is static in one place, and when the bullets from the shooting enemy hits the player, the player’s health decreases. The enemies running towards the player is chasing with different speed, so the player needs to figure out which enemies is prioritised to shoot. Also, if the chasing enemies hits the player only once, the level restarts. 
@@ -66,13 +66,12 @@ Testing:
 |     Making levels with Terrain Tools – Level 1 and 2                           |     1.5                            |
 |    Placing every weapon, buildings and enemies across the levels               |     1                              |
 |    Fixing errors with the code or Unity project                                |     1                              |
-|     Making soundtrack from scratch                                             |     1                              |
 |    Making UI and setting it up in the code                                     |     1                              |
 |    Overall adjustments and further development of the project                  |     3                              |
 |    Bug fixing                                                                  |     1                              |
 |     Code   documentation                                                       |     1                              |
 |     Making readme                                                              |     0.5                            |
-|     **All**                                                                    |     **15**                         |
+|     **All**                                                                    |     **14**                         |
 
 ## References
 [The skybox] - https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky?fbclid=IwAR0RRCbCvSkkSn8Hz70O0ZNZDo5IeOzVYqLZ5qoYy7OWP8jZUvnGL5-mMGo  
@@ -90,9 +89,3 @@ Testing:
 [FULL PICK UP & DROP SYSTEM for WEAPONS or ITEMS || Unity3d Tutorial] - https://www.youtube.com/watch?v=8kKLUsn7tcg  
 
 [Unity C# Coding Practices #1, Destroy a cube into pieces] - https://www.youtube.com/watch?v=s_v9JnTDCCY  
-
-[Background soundtrack] – FL Studio, synthesizers and royalty free samples 
-
-
-
-
