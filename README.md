@@ -1,6 +1,6 @@
 # PIVMiniproject
 
-![Visual]()
+![Visual](https://github.com/AndreasHJ3412/PIVMiniproject/blob/main/Gameplay/Gameplay.gif)
 
 ## Overview of the Game
 The idea for the project is based on a first-person shooter where time slows down when the player is stationary but runs in real-time during movement. Player moves through an enclosed arena while fighting with enemies who run towards and shoot at the player. The enemies shooting after the player is static in one place, and when the bullets from the shooting enemy hits the player, the player’s health decreases. The enemies running towards the player is chasing with different speed, so the player needs to figure out which enemies is prioritised to shoot. Also, if the chasing enemies hits the player only once, the level restarts. 
