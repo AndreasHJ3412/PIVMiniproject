@@ -58,20 +58,20 @@ Testing:
 | **Task**                                                                | **Time it Took (in hours)** |
 |--------------------------------------------------------------------------------|------------------------------------|
 |     Setting up   Unity, making a project in GitHub                             |     0.5                            |
-|     Research of game idea                                                      |     0.5                              |
-|     Setting up NavMeshAgents                                                   |     0.5                            |
+|     Research of game idea                                                      |     0.5                            |
+|     Setting up NavMeshAgents                                                   |     1                              |
 |     Making 3D models in Unity – Buildings, enemies, weapons, bullets           |     1                              |
 |     Finding and making materials                                               |     0.5                            |
 |     Player and camera movement – including slow-motion effect                  |     1                              |
-|     Making levels with Terrain Tools – Level 1 and 2                           |     1.5                            |
+|     Making levels with Terrain Tools – Level 1 and 2                           |     2                              |
 |    Placing every weapon, buildings and enemies across the levels               |     1                              |
-|    Fixing errors with the code or Unity project                                |     1                              |
-|    Making UI and setting it up in the code                                     |     1                              |
+|    Fixing errors with the code or Unity project                                |     3                              |
+|    Making UI and setting it up in the code                                     |     1.5                            |
 |    Overall adjustments and further development of the project                  |     3                              |
-|    Bug fixing                                                                  |     1                              |
+|    Bug fixing                                                                  |     4                              |
 |     Code   documentation                                                       |     1                              |
 |     Making readme                                                              |     0.5                            |
-|     **All**                                                                    |     **14**                         |
+|     **All**                                                                    |     **20.5**                       |
 
 ## References
 [The skybox] - https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky?fbclid=IwAR0RRCbCvSkkSn8Hz70O0ZNZDo5IeOzVYqLZ5qoYy7OWP8jZUvnGL5-mMGo  
